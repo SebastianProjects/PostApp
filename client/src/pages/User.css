@@ -1,0 +1,187 @@
+.user-page {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.user-info-container {
+    width: 90%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 2vw 2vw 0 2vw;
+}
+
+table,
+th,
+td {
+    border: none;
+    border-spacing: 0;
+}
+
+.user-table {
+    width: 100%;
+}
+
+.user-row {
+    width: 100%;
+}
+
+.user-row-component {
+    width: 50%;
+    font-size: 1.4vw;
+    margin: 0;
+    padding: 1vw 2vw;
+    background-color: var(--text-background-color);
+    font-weight: bold;
+    text-align: center;
+    transition: background-color 0.3s, color 0.3s;
+    text-align: left;
+}
+
+#user-username-label {
+    border-top-left-radius: 1.5vw;
+    background-color: var(--title-background-color);
+    text-align: center;
+}
+
+#user-username {
+    border-top-right-radius: 1.5vw;
+    background-color: var(--title-background-color);
+    text-align: center;
+}
+
+.post-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.post {
+    margin: 2vw;
+    border-radius: 2vw;
+    min-width: 50vw;
+    max-width: 50vw;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--text-background-color);
+    color: var(--text-color);
+    border: 0.5vw solid var(--div-border-color);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.post:hover {
+    box-shadow: 0 0 2vw var(--div-border-color);
+}
+
+.post-content {
+    display: flex;
+    flex-direction: row;
+    flex: 1;
+    width: 100%;
+    overflow-y: auto;
+}
+
+.post-text-container {
+    min-width: 50%;
+}
+
+.post-text {
+    font-size: 1.2vw;
+    text-align: justify;
+    text-justify: distribute;
+    padding: 1vw 2vw;
+    margin: 0;
+    flex: 1;
+    overflow: auto;
+    scrollbar-width: thin;
+    scrollbar-color: var(--scrollbar-color) var(--scrollbar-background-color);
+}
+
+.post-image-container {
+    display: flex;
+    height: auto;
+    align-items: center;
+    justify-content: center;
+}
+
+.post-image {
+    width: 100%;
+    object-fit: cover;
+}
+
+.post-title:hover {
+    cursor: pointer;
+    background-color: var(--div-border-color);
+    color: var(--text-background-color);
+}
+
+.post-text {
+    font-size: 1.2vw;
+    text-align: justify;
+    text-justify: distribute;
+    padding: 1vw 2vw;
+    margin: 0;
+    flex: 1;
+    overflow: auto;
+    scrollbar-width: thin;
+    scrollbar-color: var(--scrollbar-color) var(--scrollbar-background-color);
+}
+
+.post-footer {
+    padding: 1vw 2vw;
+    background-color: var(--title-background-color);
+    border-radius: 0 0 1.5vw 1.5vw;
+    display: grid;
+    grid-template-areas:
+        'user likes button'
+        'date likes button';
+    grid-template-columns: 20% auto 7%;
+}
+
+.user-post-user {
+    font-size: 1.4vw;
+    font-weight: bold;
+    padding: 0;
+    margin: 0;
+    grid-area: user;
+    text-align: left;
+    transition: color 0.3s;
+}
+
+.post-date {
+    font-size: 0.8vw;
+    padding: 0;
+    margin: 0;
+    grid-area: date;
+    text-align: left;
+}
+
+.likes-number {
+    font-size: 1.4vw;
+    text-align: right;
+    align-self: center;
+    padding: 0;
+    margin: 0 1vw 0 0;
+    grid-area: likes;
+}
+
+.user-like-button {
+    align-self: center;
+    padding: 0;
+    margin: 0;
+    color: var(--div-border-color);
+    transition: color 0.3s;
+    grid-area: button;
+}

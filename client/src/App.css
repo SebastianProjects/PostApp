@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=New+Amsterdam&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+
+.basic-palette {
+  --tea-green: #FFFFFF;
+  --celadon: #DAF0EE;
+  --air-superiority-blue: #c5dbd8;
+  --egyptian-blue: #9DB5B2;
+  --phthalo-blue: #3B413C;
+
+  --text-color: #000000;
+  --main-background: #FFFFFF;
+
+  --div-border-color: var(--phthalo-blue);
+  --element-border-color: var(--phthalo-blue);
+  --placeholder-color: var(--phthalo-blue);
+  --input-color: var(--air-superiority-blue);
+  --link-color: var(--egyptian-blue);
+  --button-color: var(--air-superiority-blue);
+  --button-hover-color: var(--egyptian-blue);
+  --button-text-hover-color: var(--celadon);
+  --div-button-hover-color: var(--phthalo-blue);
+  --title-background-color: var(--egyptian-blue);
+  --text-background-color: var(--celadon);
+  --error-color: red;
+  --scrollbar-background-color: var(--air-superiority-blue);
+  --scrollbar-color: var(--egyptian-blue);
+}
+
+.pink-green-palette {
+  --tea-green: #EEEFA8;
+  --celadon: #FFC9B9;
+  --air-superiority-blue: #4C956C;
+  --egyptian-blue: #2C6E49;
+  --phthalo-blue: #D68C45;
+
+  --text-color: #000000;
+  --main-background: var(--tea-green);
+
+  --div-border-color: var(--phthalo-blue);
+  --element-border-color: var(--phthalo-blue);
+  --placeholder-color: var(--phthalo-blue);
+  --input-color: var(--air-superiority-blue);
+  --link-color: var(--egyptian-blue);
+  --button-color: var(--air-superiority-blue);
+  --button-hover-color: var(--egyptian-blue);
+  --button-text-hover-color: var(--celadon);
+  --div-button-hover-color: var(--phthalo-blue);
+  --title-background-color: var(--egyptian-blue);
+  --text-background-color: var(--celadon);
+  --error-color: red;
+  --scrollbar-background-color: var(--air-superiority-blue);
+  --scrollbar-color: var(--egyptian-blue);
+}
+
+.yellow-palette {
+  --tea-green: #FAFDF6;
+  --celadon: #EEEFA8;
+  --air-superiority-blue: #EAE151;
+  --egyptian-blue: #DDD92A;
+  --phthalo-blue: #2D2A32;
+
+  --text-color: #000000;
+  --main-background: var(--tea-green);
+
+  --div-border-color: var(--phthalo-blue);
+  --element-border-color: var(--phthalo-blue);
+  --placeholder-color: var(--phthalo-blue);
+  --input-color: var(--air-superiority-blue);
+  --link-color: var(--egyptian-blue);
+  --button-color: var(--air-superiority-blue);
+  --button-hover-color: var(--egyptian-blue);
+  --button-text-hover-color: var(--celadon);
+  --div-button-hover-color: var(--phthalo-blue);
+  --title-background-color: var(--egyptian-blue);
+  --text-background-color: var(--celadon);
+  --error-color: red;
+  --scrollbar-background-color: var(--air-superiority-blue);
+  --scrollbar-color: var(--egyptian-blue);
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  font-family: "Nunito Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.App {
+  text-align: center;
+  align-items: center;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  min-width: 100%;
+  background-color: var(--main-background);
+  overflow: visible;
+}

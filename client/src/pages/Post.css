@@ -1,0 +1,283 @@
+.post-page {
+    display: flex;
+    width: 100%;
+    border-radius: 4vw;
+    min-height: 40vw;
+}
+
+.post-section {
+    margin: 2vw;
+    border-radius: 2vw;
+    width: 50%;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--text-background-color);
+    color: var(--text-color);
+    border: 0.5vw solid var(--div-border-color);
+    transition: transform 0.3s;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.post-delete-button {
+    width: 2vw;
+    height: 2vw;
+    position: absolute;
+    top: 1vw;
+    right: 1vw;
+    color: var(--text-background-color);
+    transition: transform 1s;
+}
+
+.post-delete-button:hover {
+    transform: scale(1.2);
+    cursor: pointer;
+    color: var(--div-border-color);
+}
+
+.one-post-title {
+    font-size: 1.6vw;
+    padding: 1vw 2vw;
+    border-radius: 1.5vw 1.5vw 0 0;
+    background-color: var(--title-background-color);
+    font-weight: bold;
+    text-align: center;
+}
+
+.one-post-content {
+    display: flex;
+    flex-direction: row;
+    flex: 1;
+    width: 100%;
+}
+
+.one-post-text-container {
+    min-width: 50%;
+}
+
+.one-post-text {
+    font-size: 1.2vw;
+    text-align: justify;
+    text-justify: distribute;
+    padding: 1vw 2vw;
+    margin: 0;
+    flex: 1;
+    overflow: auto;
+    scrollbar-width: thin;
+    scrollbar-color: var(--scrollbar-color) var(--scrollbar-background-color);
+}
+
+.one-post-image-container {
+    display: flex;
+    height: auto;
+    align-items: center;
+    justify-content: center;
+}
+
+.one-post-image {
+    width: 100%;
+    object-fit: cover;
+}
+
+.one-post-footer {
+    padding: 1vw 2vw;
+    background-color: var(--title-background-color);
+    border-radius: 0 0 1.5vw 1.5vw;
+    display: grid;
+    grid-template-areas:
+        'user likes button'
+        'date likes button';
+    grid-template-columns: 90% 5% 5%;
+}
+
+.one-post-user {
+    font-size: 1.4vw;
+    font-weight: bold;
+    padding: 0;
+    margin: 0;
+    grid-area: user;
+    text-align: left;
+    transition: color 0.3s;
+}
+
+.one-post-user:hover {
+    cursor: pointer;
+    color: var(--text-background-color);
+}
+
+.one-post-date {
+    font-size: 0.8vw;
+    padding: 0;
+    margin: 0;
+    grid-area: date;
+    text-align: left;
+}
+
+.one-post-likes-number {
+    font-size: 1.4vw;
+    align-self: center;
+    padding: 0;
+    margin: 0 1vw 0 0;
+    grid-area: likes;
+}
+
+.one-post-like-button {
+    align-self: center;
+    padding: 0;
+    margin: 0;
+    color: var(--text-background-color);
+    transition: color 0.3s;
+    grid-area: button;
+}
+
+.one-post-unlike-button {
+    align-self: center;
+    padding: 0;
+    margin: 0;
+    color: var(--div-border-color);
+    transition: color 0.3s;
+    grid-area: button;
+}
+
+.one-post-unlike-button:hover {
+    cursor: pointer;
+    color: var(--text-background-color);
+}
+
+.one-post-like-button:hover {
+    cursor: pointer;
+    color: var(--div-border-color);
+}
+
+.comment-section {
+    box-sizing: border-box;
+    margin: 2vw;
+    border-radius: 2vw 2vw 0 2vw;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--input-color);
+    color: var(--text-color);
+    border: 0.5vw solid var(--div-border-color);
+}
+
+.add-comment-container {
+    box-sizing: border-box;
+    display: flex;
+    width: 100%;
+    border-radius: 1.5vw 1.5vw 0 0;
+    background-color: var(--title-background-color);
+}
+
+.add-comment-input {
+    flex: 1;
+    font-size: 1.2vw;
+    border-radius: 1.5vw 0 0 0;
+    padding: 1vw;
+    background-color: var(--input-color);
+    border: none;
+    border-right: 0.5vw solid var(--element-border-color);
+    border-bottom: 0.5vw solid var(--element-border-color);
+    outline: none;
+}
+
+.add-comment-input::placeholder {
+    color: var(--placeholder-color);
+}
+
+.add-comment-button {
+    border: none;
+    font-size: 1.2vw;
+    border-radius: 0 1.5vw 0 0;
+    background-color: var(--button-color);
+    font-weight: bold;
+    padding: 1vw;
+    transition: background-color 0.3s, color 1s;
+}
+
+.add-comment-button:hover {
+    background-color: var(--div-button-hover-color);
+    color: var(--celadon);
+    cursor: pointer;
+}
+
+.comments-container {
+    padding: 1vw 2vw;
+    overflow-y: auto;
+    scrollbar-color: var(--scrollbar-color) var(--scrollbar-background-color);
+}
+
+.comment-with-arrow-container {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    width: 100%;
+    transition: transform 0.3s;
+    margin-bottom: 1vw;
+}
+
+.comment-with-arrow-container:hover {
+    transform: scale(1.05);
+}
+
+.arrow-up-image {
+    margin: 0;
+    margin-left: 2.5vw;
+    width: 1.2vw;
+    height: 0.6vw;
+}
+
+.comment-container {
+    padding: 1vw 1vw;
+    border-radius: 2.5vw;
+    background-color: var(--text-background-color);
+    border-bottom: 0.1vw solid var(--element-border-color);
+    text-align: justify;
+    text-justify: distribute;
+    position: relative;
+}
+
+.comment-delete-button {
+    width: 1.5vw;
+    height: 1.5vw;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.grid-container {
+    text-align: justify;
+    text-justify: distribute;
+    display: grid;
+    grid-template-columns: 90% 10%;
+}
+
+.comment-content {
+    font-size: 1.2vw;
+    margin: 0;
+    padding: 0;
+    width: 90%;
+    text-align: justify;
+    text-justify: distribute;
+    overflow: hidden;
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+.comment-delete-button:hover {
+    cursor: pointer;
+}
+
+.comment-date {
+    font-size: 0.8vw;
+    margin: 0;
+    padding: 0;
+}
+
+.comment-user {
+    text-align: center;
+    font-size: 0.8vw;
+    padding: 0;
+    margin: 0;
+}

@@ -1,0 +1,25 @@
+:root {
+    --tea-green: #FFFFFF;
+    --celadon: #DAF0EE;
+    --air-superiority-blue: #c5dbd8;
+    --egyptian-blue: #9DB5B2;
+    --phthalo-blue: #3B413C;
+
+    --text-color: #000000;
+    --main-background: #FFFFFF;
+
+    --div-border-color: var(--phthalo-blue);
+    --element-border-color: var(--phthalo-blue);
+    --placeholder-color: var(--phthalo-blue);
+    --input-color: var(--air-superiority-blue);
+    --link-color: var(--egyptian-blue);
+    --button-color: var(--air-superiority-blue);
+    --button-hover-color: var(--egyptian-blue);
+    --button-text-hover-color: var(--celadon);
+    --div-button-hover-color: var(--phthalo-blue);
+    --title-background-color: var(--egyptian-blue);
+    --text-background-color: var(--celadon);
+    --error-color: red;
+    --scrollbar-background-color: var(--air-superiority-blue);
+    --scrollbar-color: var(--egyptian-blue);
+}
